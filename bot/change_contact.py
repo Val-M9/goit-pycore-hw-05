@@ -13,7 +13,6 @@ def input_error(func):
 
 @input_error
 def change_contact(args: list[str], contacts: dict) -> str:
-  print(args)
   name, phone = args
   old_phone = contacts.get(name)
   if old_phone:
